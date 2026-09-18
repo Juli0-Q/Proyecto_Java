@@ -4,5 +4,5 @@ En una biblioteca, llevar el control de los libros, usuarios, préstamos y devol
 
 ## INTEGRANTES
 - Diego Miguel Ordinola Rodriguez
-- 
+- Garrido Mantilla Yohan Javier
 
