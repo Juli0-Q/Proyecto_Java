@@ -1,18 +1,8 @@
-## Getting Started
+## SISTEMA DE GESTION Y CONTROL DE PRESTAMOS DE UNA BIBLIOTECA
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+En una biblioteca, llevar el control de los libros, usuarios, préstamos y devoluciones de manera manual puede generar errores y pérdida de información. Además, puede resultar difícil conocer qué libros están disponibles, quién tiene un libro prestado y cuándo debe ser devuelto. Por este motivo, se propone desarrollar un sistema de gestión de biblioteca utilizando Programación Orientada a Objetos, que permita organizar y facilitar el control de libros, usuarios y préstamos.
 
-## Folder Structure
+## INTEGRANTES
+- Diego Miguel Ordinola Rodriguez
+- 
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
