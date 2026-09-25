@@ -7,3 +7,6 @@ En una biblioteca, llevar el control de los libros, usuarios, préstamos y devol
 - Garrido Mantilla Yohan Javier
 - Quiñonez Morón Julio Marcelo 
 - Rodriguez Iñigua Fabrizio Leonardo
+
+## SIMULACIÓN DE CONFLICTO
+- Haciendo un conflicto
