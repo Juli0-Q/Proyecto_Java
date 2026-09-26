@@ -8,5 +8,5 @@ En una biblioteca, llevar el control de los libros, usuarios, préstamos y devol
 - Quiñonez Morón Julio Marcelo 
 - Rodriguez Iñigua Fabrizio Leonardo
 
-## SIMULACIÓN DE CONFLICTO
-- Haciendo un conflicto
+## PROBANDO 
+Cambio temporal para probar git stash

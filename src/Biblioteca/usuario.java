@@ -1,23 +1,26 @@
 package Biblioteca;
 
-public class usuario extends persona {
-    private String correo;
+public class usuario {
 
-    public usuario(int id, String nombre, String correo) {
-        super(id, nombre);  
-        this.correo = correo;
+    private int codigo;
+    private String nombre;
+
+    public usuario(int codigo, String nombre) {
+        this.codigo = codigo;
+        this.nombre = nombre;
     }
 
-    public String getCorreo() {
-    return correo;
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public String getNombre() {
+        return nombre;
     }
 
     @Override
     public String toString() {
-        return "Usuario{" +
-            "id=" + id +
-            ", nombre='" + nombre + '\'' +
-            ", correo='" + correo + '\'' +
-            '}';
+        return "Código: " + codigo
+                + " | Nombre: " + nombre;
     }
 }
