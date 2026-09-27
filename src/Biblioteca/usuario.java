@@ -1,5 +1,5 @@
 package Biblioteca;
 
-public class usuario extends persona {
+public class usuario {
 
 }
