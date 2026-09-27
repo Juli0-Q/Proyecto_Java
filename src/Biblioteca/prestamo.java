@@ -4,12 +4,12 @@ import java.time.LocalDate;
 public class prestamo {
 
     private int codigo;
-    private Libro libro;
-    private Usuario usuario;
+    private libro libro;
+    private usuario usuario;
     private LocalDate fecha;
     private boolean activo;
 
-    public prestamo(int codigo, Libro libro, Usuario usuario) {
+    public prestamo(int codigo, libro libro, usuario usuario) {
         this.codigo = codigo;
         this.libro = libro;
         this.usuario = usuario;
@@ -21,11 +21,11 @@ public class prestamo {
         return codigo;
     }
 
-    public Libro getLibro() {
+    public libro getLibro() {
         return libro;
     }
 
-    public Usuario getUsuario() {
+    public usuario getUsuario() {
         return usuario;
     }
 
