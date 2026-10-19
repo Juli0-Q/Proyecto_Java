@@ -1,9 +1,12 @@
 package excepciones;
 
-public class LibroNoDisponibleException extends BibliotecaException {
-    private static final long serialVersionUID = 1L;
+/** Error: se intentó prestar un libro que ya está prestado. */
+public class LibroNoDisponibleException extends Exception {
 
-    public LibroNoDisponibleException(String titulo) {
-        super("El libro \"" + titulo + "\" no está disponible (ya se encuentra prestado).");
+    /**
+     * @param mensaje texto que se mostrará al usuario en la ventana de error
+     */
+    public LibroNoDisponibleException(String mensaje) {
+        super(mensaje);
     }
 }
