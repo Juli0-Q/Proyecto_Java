@@ -30,8 +30,8 @@ public class ControladorBiblioteca {
         cargarUsuariosGuardados();
         
         if (usuarios.isEmpty()) {
-            usuarios.add(new Usuario("US-001", "Julio Quiñonez", "julio@mail.com"));
-            usuarios.add(new Usuario("US-002", "Carlos Pérez", "carlos@mail.com"));
+            usuarios.add(new Usuario("US-001", "Maria Gutierrez", "maria@mail.com"));
+            usuarios.add(new Usuario("US-002", "Valentino Morales", "valentino@mail.com"));
         }
     }
 
@@ -254,8 +254,8 @@ public class ControladorBiblioteca {
     private void cargarDatosIniciales() {
         File archivo = new File(ARCHIVO_LIBROS);
         if (!archivo.exists()) {
-            libros.add(new Libro("LIB-001", "El Principito", "Antoine de Saint-Exupéry", 3));
-            libros.add(new Libro("LIB-002", "Don Quijote", "Miguel de Cervantes", 2));
+            libros.add(new Libro("LIB-001", "El Señor de los Anillos", "John Ronald Reuel Tolkien", 3));
+            libros.add(new Libro("LIB-002", "Harry Potter", "Joanne Rowling", 2));
             return;
         }
         try (BufferedReader reader = new BufferedReader(new FileReader(archivo))) {
