@@ -4,5 +4,6 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ],
-    "jira-plugin.workingProject": ""
+    "jira-plugin.workingProject": "",
+    "java.debug.settings.onBuildFailureProceed": true
 }
