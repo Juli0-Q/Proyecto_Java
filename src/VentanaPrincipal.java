@@ -55,7 +55,13 @@ public class VentanaPrincipal extends JFrame {
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
             public void windowClosing(java.awt.event.WindowEvent windowEvent) {
-                controlador.exportarTodoACSV();
+                try {
+                    controlador.exportarTodoACSV();
+                } catch (java.io.IOException ex) {
+                    JOptionPane.showMessageDialog(VentanaPrincipal.this,
+                            "No se pudieron guardar los datos al cerrar:\n" + ex.getMessage(),
+                            "Error al guardar", JOptionPane.ERROR_MESSAGE);
+                }
             }
         });
 
@@ -399,8 +405,16 @@ public class VentanaPrincipal extends JFrame {
         bLimP.addActionListener(e -> limpiarFormularios());
 
         btnExportar.addActionListener(e -> {
-            controlador.exportarTodoACSV();
-            JOptionPane.showMessageDialog(this, "¡Archivos exportados a CSV con éxito!");
+            try {
+                controlador.exportarTodoACSV();
+                JOptionPane.showMessageDialog(this,
+                        "¡Archivos exportados a CSV con éxito!\nCarpeta: " + controlador.getRutaExportacion());
+            } catch (java.io.IOException ex) {
+                JOptionPane.showMessageDialog(this,
+                        "No se pudo exportar:\n" + ex.getMessage()
+                        + "\n\nSi el archivo está abierto en Excel, ciérralo e inténtalo de nuevo.",
+                        "Error al exportar", JOptionPane.ERROR_MESSAGE);
+            }
         });
 
         bPrestar.addActionListener(e -> {
