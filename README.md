@@ -6,6 +6,7 @@ En una biblioteca, llevar el control de los libros, usuarios, préstamos y devol
 - Garrido Mantilla Yohan Javier 
 - Quiñonez Morón Julio Marcelo 
 - Rodríguez Iñigua Fabrizio Leonardo
+- Jose Fernando Flores Quintana
 
 ## BREVE EXPLICACION DEL CODIGO
 ## Arquitectura General (MVC)
