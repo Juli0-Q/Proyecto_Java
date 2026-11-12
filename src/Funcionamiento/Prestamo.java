@@ -25,6 +25,18 @@ public class Prestamo {
         this.libro.prestarEjemplar();
     }
 
+    /**
+     * Constructor para restaurar un préstamo guardado en CSV.
+     * No descuenta stock: el inventario guardado ya refleja ese préstamo.
+     */
+    public Prestamo(String codigoPrestamo, Libro libro, Usuario usuario, LocalDate fechaPrestamo, String estado) {
+        this.codigoPrestamo = codigoPrestamo;
+        this.libro = libro;
+        this.usuario = usuario;
+        this.fechaPrestamo = fechaPrestamo;
+        this.estado = estado;
+    }
+
     public void finalizarPrestamo() {
         LocalDate fechaDevolucion = LocalDate.now();
         long diasTranscurridos = ChronoUnit.DAYS.between(fechaPrestamo, fechaDevolucion);
